@@ -1,0 +1,57 @@
+# Docusaurus build output
+build/
+.docusaurus/
+
+# Node dependencies
+node_modules/
+package-lock.json
+yarn.lock
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.env
+
+# ROS 2
+install/
+build/
+devel/
+*.egg-info/
+
+# Gazebo/Isaac
+.gazebo/
+.omniverse/
+
+# Temporary files
+*.tmp
+*.bak
+/tmp/
+*.log
+
+# Sensitive data
+*.key
+*.pem
+.env.local
+
+# Build artifacts
+*.o
+*.a
+*.so
+.cmake_cache
+
+# OS-specific
+Thumbs.db
+.DS_Store

@@ -1,0 +1,597 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a simple framework built on top of CSS Grid
+ * supporting the layout used in classic Docusaurus sites.
+ */
+
+/* Robotics-inspired Dark Theme */
+:root {
+  --ifm-color-primary: #0d9488;
+  --ifm-color-primary-dark: #0f766e;
+  --ifm-color-primary-darker: #115e59;
+  --ifm-color-primary-darkest: #134e4a;
+  --ifm-color-primary-light: #14b8a6;
+  --ifm-color-primary-lighter: #2dd4bf;
+  --ifm-color-primary-lightest: #ccfbf1;
+
+  --ifm-color-secondary: #64748b;
+  --ifm-color-secondary-dark: #475569;
+  --ifm-color-secondary-darker: #334155;
+  --ifm-color-secondary-darkest: #1e293b;
+  --ifm-color-secondary-light: #94a3b8;
+  --ifm-color-secondary-lighter: #cbd5e1;
+  --ifm-color-secondary-lightest: #f1f5f9;
+
+  /* Dark theme background colors */
+  --ifm-background-color: #0f172a;
+  --ifm-background-surface-color: #1a1f35;
+
+  /* Text colors */
+  --ifm-font-color-base: #e2e8f0;
+  --ifm-font-color-base-inverse: #1a1f35;
+
+  /* Robotics accent colors */
+  --accent-cyan: #06b6d4;
+  --accent-purple: #a855f7;
+  --accent-green: #10b981;
+
+  /* Code block styling */
+  --ifm-code-background: #1e293b;
+  --ifm-code-color: #e2e8f0;
+
+  /* Spacing */
+  --ifm-spacing-horizontal: 1.5rem;
+  --ifm-spacing-vertical: 1.5rem;
+}
+
+html[data-theme='light'] {
+  --ifm-color-primary: #059669;
+  --ifm-color-primary-dark: #047857;
+  --ifm-color-primary-darker: #065f46;
+  --ifm-color-primary-darkest: #064e3b;
+  --ifm-background-color: #ffffff;
+  --ifm-background-surface-color: #f8fafc;
+  --ifm-font-color-base: #1e293b;
+  --ifm-code-background: #f1f5f9;
+  --ifm-code-color: #1e293b;
+}
+
+/* ============================================
+   Typography
+   ============================================ */
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--ifm-font-color-base);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 1rem;
+  color: var(--ifm-font-color-base);
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-top: 2rem;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-top: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--ifm-color-primary);
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+  color: var(--accent-cyan);
+}
+
+/* ============================================
+   Navbar Styling
+   ============================================ */
+
+.navbar {
+  background: linear-gradient(135deg, rgba(15, 23, 42, 0.95) 0%, rgba(30, 41, 59, 0.95) 100%);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(13, 148, 136, 0.2);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  transition: all 0.3s ease;
+}
+
+.navbar__inner {
+  padding: 0.75rem 1.5rem;
+}
+
+.navbar__title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, var(--accent-cyan) 0%, var(--accent-green) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  letter-spacing: 0.05em;
+  transition: transform 0.2s ease;
+}
+
+.navbar__title:hover {
+  transform: scale(1.05);
+}
+
+.navbar__items {
+  gap: 1rem;
+}
+
+.navbar__item a {
+  color: var(--ifm-font-color-base);
+  font-weight: 500;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.navbar__item a:hover {
+  background-color: rgba(13, 148, 136, 0.2);
+  color: var(--accent-cyan);
+  transform: translateY(-2px);
+}
+
+.navbar__item a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--accent-cyan), var(--accent-green));
+  transition: width 0.3s ease;
+}
+
+.navbar__item a:hover::after {
+  width: 100%;
+}
+
+/* ============================================
+   Sidebar Styling
+   ============================================ */
+
+.sidebar {
+  background-color: var(--ifm-background-surface-color);
+  border-right: 1px solid rgba(13, 148, 136, 0.1);
+}
+
+.sidebar__item {
+  padding: 0.5rem 0;
+}
+
+.sidebar__item a {
+  color: var(--ifm-font-color-base);
+  transition: all 0.2s ease;
+  padding: 0.75rem 1rem;
+  border-radius: 0.375rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.sidebar__item a:hover {
+  background-color: rgba(13, 148, 136, 0.15);
+  color: var(--accent-cyan);
+  transform: translateX(4px);
+}
+
+.sidebar__item.active > a {
+  background-color: rgba(13, 148, 136, 0.2);
+  color: var(--accent-cyan);
+  font-weight: 600;
+  border-left: 3px solid var(--accent-cyan);
+}
+
+/* ============================================
+   Hero Section
+   ============================================ */
+
+.hero-section {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="20" cy="20" r="2" fill="rgba(13,148,136,0.1)"/><circle cx="80" cy="80" r="3" fill="rgba(13,148,136,0.1)"/><circle cx="50" cy="50" r="2" fill="rgba(13,148,136,0.1)"/></svg>');
+  opacity: 0.1;
+  animation: float 20s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(20px); }
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding: 2rem;
+  max-width: 800px;
+  animation: slideUp 0.8s ease-out;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, var(--accent-cyan) 0%, var(--accent-green) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 1rem;
+  letter-spacing: -0.02em;
+  animation: fadeIn 1s ease-out 0.2s both;
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  color: var(--ifm-font-color-base);
+  margin-bottom: 2rem;
+  font-weight: 300;
+  animation: fadeIn 1s ease-out 0.4s both;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  animation: fadeIn 1s ease-out 0.6s both;
+}
+
+.button {
+  padding: 1rem 2.5rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.button-primary {
+  background: linear-gradient(135deg, var(--accent-cyan) 0%, var(--accent-green) 100%);
+  color: #0f172a;
+  box-shadow: 0 10px 30px rgba(13, 148, 136, 0.3);
+}
+
+.button-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 40px rgba(13, 148, 136, 0.4);
+}
+
+.button-secondary {
+  background-color: transparent;
+  border: 2px solid var(--accent-cyan);
+  color: var(--accent-cyan);
+}
+
+.button-secondary:hover {
+  background-color: rgba(13, 148, 136, 0.1);
+  transform: translateY(-3px);
+}
+
+/* ============================================
+   Cards Section
+   ============================================ */
+
+.cards-section {
+  padding: 4rem 2rem;
+  background-color: var(--ifm-background-color);
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card {
+  background-color: var(--ifm-background-surface-color);
+  border: 1px solid rgba(13, 148, 136, 0.2);
+  border-radius: 0.75rem;
+  padding: 2rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: -100%;
+  left: -100%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(13, 148, 136, 0.15) 0%, transparent 70%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.card:hover {
+  border-color: var(--accent-cyan);
+  box-shadow: 0 20px 40px rgba(13, 148, 136, 0.2);
+  transform: translateY(-10px);
+}
+
+.card:hover::before {
+  opacity: 1;
+}
+
+.card-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  color: var(--accent-cyan);
+}
+
+.card-description {
+  color: var(--ifm-font-color-base);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* ============================================
+   Section Titles
+   ============================================ */
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: var(--ifm-font-color-base);
+}
+
+.section-title::after {
+  content: '';
+  display: block;
+  width: 100px;
+  height: 4px;
+  background: linear-gradient(90deg, var(--accent-cyan), var(--accent-green));
+  margin: 1rem auto 0;
+  border-radius: 2px;
+}
+
+/* ============================================
+   Code Blocks
+   ============================================ */
+
+code {
+  background-color: var(--ifm-code-background);
+  color: var(--ifm-code-color);
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.25rem;
+  font-size: 0.9em;
+}
+
+pre {
+  background-color: var(--ifm-code-background);
+  border: 1px solid rgba(13, 148, 136, 0.2);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  overflow-x: auto;
+}
+
+pre code {
+  background: none;
+  padding: 0;
+  color: var(--ifm-code-color);
+}
+
+/* ============================================
+   Callout Boxes
+   ============================================ */
+
+.callout {
+  border-left: 4px solid;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  border-radius: 0.375rem;
+  background-color: var(--ifm-background-surface-color);
+}
+
+.callout-important {
+  border-color: #ef4444;
+  background-color: rgba(239, 68, 68, 0.1);
+}
+
+.callout-tip {
+  border-color: var(--accent-green);
+  background-color: rgba(16, 185, 129, 0.1);
+}
+
+.callout-warning {
+  border-color: #f59e0b;
+  background-color: rgba(245, 158, 11, 0.1);
+}
+
+.callout-info {
+  border-color: var(--accent-cyan);
+  background-color: rgba(6, 182, 212, 0.1);
+}
+
+.callout-title {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.callout-content {
+  margin: 0.5rem 0 0 0;
+}
+
+/* ============================================
+   Tables
+   ============================================ */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+}
+
+thead {
+  background-color: rgba(13, 148, 136, 0.1);
+}
+
+th {
+  padding: 1rem;
+  text-align: left;
+  font-weight: 700;
+  color: var(--accent-cyan);
+  border-bottom: 2px solid var(--accent-cyan);
+}
+
+td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid rgba(13, 148, 136, 0.1);
+}
+
+tr:hover {
+  background-color: rgba(13, 148, 136, 0.05);
+}
+
+/* ============================================
+   Responsive Design
+   ============================================ */
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.125rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+  }
+
+  .button {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .cards-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section-title {
+    font-size: 1.75rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+}
+
+/* ============================================
+   Progress Indicator
+   ============================================ */
+
+.reading-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--accent-cyan), var(--accent-green));
+  z-index: 200;
+}
+
+/* ============================================
+   Document Container
+   ============================================ */
+
+.docItemContainer {
+  margin: 2rem 0;
+}
+
+.docItemCol {
+  padding: 1rem;
+}
+
+/* Navigation buttons */
+.pagination-nav__link {
+  border: 1px solid rgba(13, 148, 136, 0.2);
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.pagination-nav__link:hover {
+  border-color: var(--accent-cyan);
+  background-color: rgba(13, 148, 136, 0.1);
+  transform: translateX(5px);
+}
+
+.pagination-nav__label {
+  color: var(--accent-cyan);
+  font-weight: 600;
+}
