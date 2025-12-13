@@ -42,7 +42,7 @@ Deployment Tests (real hardware)
 
 ### Key Metrics
 
-- **Latency**: Time from input to output (target: <100 ms for voice)
+- **Latency**: Time from input to output (target: &lt;100 ms for voice)
 - **Throughput**: Commands processed per second (target: 10 Hz minimum)
 - **Reliability**: System uptime without crashes (target: 99%+)
 - **Accuracy**: Success rate of tasks (target: 90%+)
