@@ -595,3 +595,13 @@ tr:hover {
   color: var(--accent-cyan);
   font-weight: 600;
 }
+
+/* Call-to-Action Section */
+.cta-section {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.cta-button {
+  margin: 0.5rem;
+}

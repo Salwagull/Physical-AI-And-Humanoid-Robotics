@@ -99,7 +99,7 @@ description: From ROS 2 to Vision-Language-Action Systems
 
 ---
 
-<div style="text-align: center; padding: 2rem 0;">
-  <a href="/docs/intro" class="button button-primary" style="margin: 0.5rem;">📖 Read the Introduction</a>
-  <a href="/docs/glossary" class="button button-secondary" style="margin: 0.5rem;">📚 View the Glossary</a>
+<div class="cta-section">
+  <a href="/docs/intro" class="button button-primary cta-button">📖 Read the Introduction</a>
+  <a href="/docs/glossary" class="button button-secondary cta-button">📚 View the Glossary</a>
 </div>
