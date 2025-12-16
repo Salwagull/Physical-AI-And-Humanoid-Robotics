@@ -1,0 +1,29 @@
+{
+  "id": "chapters/perception-vision",
+  "title": "Chapter 6 - Perception & Vision",
+  "description": "Computer vision fundamentals and robot perception pipelines",
+  "source": "@site/docs/chapters/06-perception-vision.md",
+  "sourceDirName": "chapters",
+  "slug": "/chapters/perception-vision",
+  "permalink": "/Physical-AI-And-Humanoid-Robotics/chapters/perception-vision",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/Salwagull/Physical-AI-And-Humanoid-Robotics/tree/main/docs/chapters/06-perception-vision.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 6,
+  "frontMatter": {
+    "sidebar_position": 6,
+    "title": "Chapter 6 - Perception & Vision",
+    "description": "Computer vision fundamentals and robot perception pipelines"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Chapter 5 - Isaac Sim Setup",
+    "permalink": "/Physical-AI-And-Humanoid-Robotics/chapters/isaac-sim-setup"
+  },
+  "next": {
+    "title": "Chapter 7 - Control & Planning",
+    "permalink": "/Physical-AI-And-Humanoid-Robotics/chapters/control-planning"
+  }
+}

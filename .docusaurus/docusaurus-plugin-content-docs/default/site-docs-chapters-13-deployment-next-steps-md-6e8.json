@@ -1,0 +1,29 @@
+{
+  "id": "chapters/deployment-next-steps",
+  "title": "Chapter 13 - Deployment & Next Steps",
+  "description": "Deploying to real hardware, containerization, and continued learning",
+  "source": "@site/docs/chapters/13-deployment-next-steps.md",
+  "sourceDirName": "chapters",
+  "slug": "/chapters/deployment-next-steps",
+  "permalink": "/Physical-AI-And-Humanoid-Robotics/chapters/deployment-next-steps",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/Salwagull/Physical-AI-And-Humanoid-Robotics/tree/main/docs/chapters/13-deployment-next-steps.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 13,
+  "frontMatter": {
+    "sidebar_position": 13,
+    "title": "Chapter 13 - Deployment & Next Steps",
+    "description": "Deploying to real hardware, containerization, and continued learning"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Chapter 12 - Testing & Validation",
+    "permalink": "/Physical-AI-And-Humanoid-Robotics/chapters/testing-validation"
+  },
+  "next": {
+    "title": "Glossary",
+    "permalink": "/Physical-AI-And-Humanoid-Robotics/glossary"
+  }
+}

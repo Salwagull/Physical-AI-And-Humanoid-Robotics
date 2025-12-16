@@ -1,0 +1,15 @@
+{
+  "id": "code-examples/README",
+  "title": "Code Examples",
+  "description": "This directory contains runnable code examples for each chapter of the Physical AI & Humanoid Robotics book.",
+  "source": "@site/docs/code-examples/README.md",
+  "sourceDirName": "code-examples",
+  "slug": "/code-examples/",
+  "permalink": "/Physical-AI-And-Humanoid-Robotics/code-examples/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/Salwagull/Physical-AI-And-Humanoid-Robotics/tree/main/docs/code-examples/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

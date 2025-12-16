@@ -1,0 +1,94 @@
+{
+  "/Physical-AI-And-Humanoid-Robotics/-ad7": {
+    "__comp": "c4f5d8e4",
+    "__context": {
+      "plugin": "a7456010"
+    },
+    "config": "5e9f5e1a"
+  },
+  "/Physical-AI-And-Humanoid-Robotics/-563": {
+    "__comp": "5e95c892",
+    "__context": {
+      "plugin": "aba21aa0"
+    }
+  },
+  "/Physical-AI-And-Humanoid-Robotics/-f91": {
+    "__comp": "a7bd4aaa",
+    "__props": "e7737404"
+  },
+  "/Physical-AI-And-Humanoid-Robotics/-e37": {
+    "__comp": "a94703ab"
+  },
+  "/Physical-AI-And-Humanoid-Robotics/book-overview-76e": {
+    "__comp": "17896441",
+    "content": "c377a04b"
+  },
+  "/Physical-AI-And-Humanoid-Robotics/chapters/capstone-architecture-de8": {
+    "__comp": "17896441",
+    "content": "4f112daa"
+  },
+  "/Physical-AI-And-Humanoid-Robotics/chapters/capstone-implementation-65a": {
+    "__comp": "17896441",
+    "content": "054f64ec"
+  },
+  "/Physical-AI-And-Humanoid-Robotics/chapters/control-planning-ee2": {
+    "__comp": "17896441",
+    "content": "b464d60a"
+  },
+  "/Physical-AI-And-Humanoid-Robotics/chapters/deployment-next-steps-748": {
+    "__comp": "17896441",
+    "content": "6e89e111"
+  },
+  "/Physical-AI-And-Humanoid-Robotics/chapters/gazebo-simulation-26c": {
+    "__comp": "17896441",
+    "content": "4ea7b3da"
+  },
+  "/Physical-AI-And-Humanoid-Robotics/chapters/isaac-sim-setup-467": {
+    "__comp": "17896441",
+    "content": "11d29a2c"
+  },
+  "/Physical-AI-And-Humanoid-Robotics/chapters/perception-vision-beb": {
+    "__comp": "17896441",
+    "content": "97a83f87"
+  },
+  "/Physical-AI-And-Humanoid-Robotics/chapters/physical-ai-foundations-d20": {
+    "__comp": "17896441",
+    "content": "52e20c17"
+  },
+  "/Physical-AI-And-Humanoid-Robotics/chapters/ros2-essentials-a9d": {
+    "__comp": "17896441",
+    "content": "af680121"
+  },
+  "/Physical-AI-And-Humanoid-Robotics/chapters/testing-validation-dc6": {
+    "__comp": "17896441",
+    "content": "e66bed9c"
+  },
+  "/Physical-AI-And-Humanoid-Robotics/chapters/unity-digital-twins-fbd": {
+    "__comp": "17896441",
+    "content": "74e2c68d"
+  },
+  "/Physical-AI-And-Humanoid-Robotics/chapters/vla-systems-intro-91c": {
+    "__comp": "17896441",
+    "content": "7caa20f1"
+  },
+  "/Physical-AI-And-Humanoid-Robotics/chapters/voice-robotics-9db": {
+    "__comp": "17896441",
+    "content": "9277278f"
+  },
+  "/Physical-AI-And-Humanoid-Robotics/code-examples-202": {
+    "__comp": "17896441",
+    "content": "e8cafca8"
+  },
+  "/Physical-AI-And-Humanoid-Robotics/diagrams-f09": {
+    "__comp": "17896441",
+    "content": "57df79c1"
+  },
+  "/Physical-AI-And-Humanoid-Robotics/glossary-5b4": {
+    "__comp": "17896441",
+    "content": "e747ec83"
+  },
+  "/Physical-AI-And-Humanoid-Robotics/intro-fc7": {
+    "__comp": "17896441",
+    "content": "0e384e19"
+  }
+}

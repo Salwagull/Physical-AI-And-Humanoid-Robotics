@@ -1,0 +1,25 @@
+{
+  "id": "intro",
+  "title": "Introduction",
+  "description": "How to use this book, prerequisites, and learning paths",
+  "source": "@site/docs/intro.md",
+  "sourceDirName": ".",
+  "slug": "/intro",
+  "permalink": "/Physical-AI-And-Humanoid-Robotics/intro",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/Salwagull/Physical-AI-And-Humanoid-Robotics/tree/main/docs/intro.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1,
+    "title": "Introduction",
+    "description": "How to use this book, prerequisites, and learning paths"
+  },
+  "sidebar": "tutorialSidebar",
+  "next": {
+    "title": "Chapter 1 - Physical AI Foundations",
+    "permalink": "/Physical-AI-And-Humanoid-Robotics/chapters/physical-ai-foundations"
+  }
+}

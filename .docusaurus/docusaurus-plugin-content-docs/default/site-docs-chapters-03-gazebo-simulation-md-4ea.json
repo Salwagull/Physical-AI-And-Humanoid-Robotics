@@ -1,0 +1,29 @@
+{
+  "id": "chapters/gazebo-simulation",
+  "title": "Chapter 3 - Gazebo Simulation",
+  "description": "Building realistic physics simulations with Gazebo and ROS 2",
+  "source": "@site/docs/chapters/03-gazebo-simulation.md",
+  "sourceDirName": "chapters",
+  "slug": "/chapters/gazebo-simulation",
+  "permalink": "/Physical-AI-And-Humanoid-Robotics/chapters/gazebo-simulation",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/Salwagull/Physical-AI-And-Humanoid-Robotics/tree/main/docs/chapters/03-gazebo-simulation.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3,
+    "title": "Chapter 3 - Gazebo Simulation",
+    "description": "Building realistic physics simulations with Gazebo and ROS 2"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Chapter 2 - ROS 2 Essentials",
+    "permalink": "/Physical-AI-And-Humanoid-Robotics/chapters/ros2-essentials"
+  },
+  "next": {
+    "title": "Chapter 4 - Unity Digital Twins",
+    "permalink": "/Physical-AI-And-Humanoid-Robotics/chapters/unity-digital-twins"
+  }
+}

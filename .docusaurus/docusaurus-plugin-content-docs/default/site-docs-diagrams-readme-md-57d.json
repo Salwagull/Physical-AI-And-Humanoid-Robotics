@@ -1,0 +1,15 @@
+{
+  "id": "diagrams/README",
+  "title": "Diagrams & Visual Assets",
+  "description": "This directory contains visual assets for each chapter of the Physical AI & Humanoid Robotics book.",
+  "source": "@site/docs/diagrams/README.md",
+  "sourceDirName": "diagrams",
+  "slug": "/diagrams/",
+  "permalink": "/Physical-AI-And-Humanoid-Robotics/diagrams/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/Salwagull/Physical-AI-And-Humanoid-Robotics/tree/main/docs/diagrams/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

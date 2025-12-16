@@ -1,0 +1,29 @@
+{
+  "id": "chapters/ros2-essentials",
+  "title": "Chapter 2 - ROS 2 Essentials",
+  "description": "Building distributed robotics systems with the Robot Operating System 2",
+  "source": "@site/docs/chapters/02-ros2-essentials.md",
+  "sourceDirName": "chapters",
+  "slug": "/chapters/ros2-essentials",
+  "permalink": "/Physical-AI-And-Humanoid-Robotics/chapters/ros2-essentials",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/Salwagull/Physical-AI-And-Humanoid-Robotics/tree/main/docs/chapters/02-ros2-essentials.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2,
+    "title": "Chapter 2 - ROS 2 Essentials",
+    "description": "Building distributed robotics systems with the Robot Operating System 2"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Chapter 1 - Physical AI Foundations",
+    "permalink": "/Physical-AI-And-Humanoid-Robotics/chapters/physical-ai-foundations"
+  },
+  "next": {
+    "title": "Chapter 3 - Gazebo Simulation",
+    "permalink": "/Physical-AI-And-Humanoid-Robotics/chapters/gazebo-simulation"
+  }
+}

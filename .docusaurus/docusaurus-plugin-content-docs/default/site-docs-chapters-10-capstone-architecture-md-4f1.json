@@ -1,0 +1,29 @@
+{
+  "id": "chapters/capstone-architecture",
+  "title": "Chapter 10 - Capstone Architecture",
+  "description": "Designing the Voice-Driven Mobile Manipulator system architecture",
+  "source": "@site/docs/chapters/10-capstone-architecture.md",
+  "sourceDirName": "chapters",
+  "slug": "/chapters/capstone-architecture",
+  "permalink": "/Physical-AI-And-Humanoid-Robotics/chapters/capstone-architecture",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/Salwagull/Physical-AI-And-Humanoid-Robotics/tree/main/docs/chapters/10-capstone-architecture.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 10,
+  "frontMatter": {
+    "sidebar_position": 10,
+    "title": "Chapter 10 - Capstone Architecture",
+    "description": "Designing the Voice-Driven Mobile Manipulator system architecture"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Chapter 9 - Voice-Driven Robotics",
+    "permalink": "/Physical-AI-And-Humanoid-Robotics/chapters/voice-robotics"
+  },
+  "next": {
+    "title": "Chapter 11 - Capstone Implementation",
+    "permalink": "/Physical-AI-And-Humanoid-Robotics/chapters/capstone-implementation"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "chapters/control-planning",
+  "title": "Chapter 7 - Control & Planning",
+  "description": "Motion planning, trajectory generation, and robot control systems",
+  "source": "@site/docs/chapters/07-control-planning.md",
+  "sourceDirName": "chapters",
+  "slug": "/chapters/control-planning",
+  "permalink": "/Physical-AI-And-Humanoid-Robotics/chapters/control-planning",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/Salwagull/Physical-AI-And-Humanoid-Robotics/tree/main/docs/chapters/07-control-planning.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 7,
+  "frontMatter": {
+    "sidebar_position": 7,
+    "title": "Chapter 7 - Control & Planning",
+    "description": "Motion planning, trajectory generation, and robot control systems"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Chapter 6 - Perception & Vision",
+    "permalink": "/Physical-AI-And-Humanoid-Robotics/chapters/perception-vision"
+  },
+  "next": {
+    "title": "Chapter 8 - Vision-Language-Action Systems Intro",
+    "permalink": "/Physical-AI-And-Humanoid-Robotics/chapters/vla-systems-intro"
+  }
+}

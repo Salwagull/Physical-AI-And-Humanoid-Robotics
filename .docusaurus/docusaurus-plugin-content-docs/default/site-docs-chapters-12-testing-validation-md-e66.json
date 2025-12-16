@@ -1,0 +1,29 @@
+{
+  "id": "chapters/testing-validation",
+  "title": "Chapter 12 - Testing & Validation",
+  "description": "Integration testing, performance profiling, and debugging the capstone system",
+  "source": "@site/docs/chapters/12-testing-validation.md",
+  "sourceDirName": "chapters",
+  "slug": "/chapters/testing-validation",
+  "permalink": "/Physical-AI-And-Humanoid-Robotics/chapters/testing-validation",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/Salwagull/Physical-AI-And-Humanoid-Robotics/tree/main/docs/chapters/12-testing-validation.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 12,
+  "frontMatter": {
+    "sidebar_position": 12,
+    "title": "Chapter 12 - Testing & Validation",
+    "description": "Integration testing, performance profiling, and debugging the capstone system"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Chapter 11 - Capstone Implementation",
+    "permalink": "/Physical-AI-And-Humanoid-Robotics/chapters/capstone-implementation"
+  },
+  "next": {
+    "title": "Chapter 13 - Deployment & Next Steps",
+    "permalink": "/Physical-AI-And-Humanoid-Robotics/chapters/deployment-next-steps"
+  }
+}

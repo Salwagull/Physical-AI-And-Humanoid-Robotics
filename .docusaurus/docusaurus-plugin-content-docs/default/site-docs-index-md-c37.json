@@ -1,0 +1,21 @@
+{
+  "id": "index",
+  "title": "Book Overview",
+  "description": "Complete table of contents and chapter guide",
+  "source": "@site/docs/index.md",
+  "sourceDirName": ".",
+  "slug": "/book-overview",
+  "permalink": "/Physical-AI-And-Humanoid-Robotics/book-overview",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/Salwagull/Physical-AI-And-Humanoid-Robotics/tree/main/docs/index.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 100,
+  "frontMatter": {
+    "slug": "/book-overview",
+    "title": "Book Overview",
+    "description": "Complete table of contents and chapter guide",
+    "sidebar_position": 100
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "path": "/Physical-AI-And-Humanoid-Robotics/",
+      "versions": [
+        {
+          "name": "current",
+          "label": "Next",
+          "isLast": true,
+          "path": "/Physical-AI-And-Humanoid-Robotics/",
+          "mainDocId": "intro",
+          "docs": [
+            {
+              "id": "chapters/capstone-architecture",
+              "path": "/Physical-AI-And-Humanoid-Robotics/chapters/capstone-architecture",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "chapters/capstone-implementation",
+              "path": "/Physical-AI-And-Humanoid-Robotics/chapters/capstone-implementation",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "chapters/control-planning",
+              "path": "/Physical-AI-And-Humanoid-Robotics/chapters/control-planning",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "chapters/deployment-next-steps",
+              "path": "/Physical-AI-And-Humanoid-Robotics/chapters/deployment-next-steps",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "chapters/gazebo-simulation",
+              "path": "/Physical-AI-And-Humanoid-Robotics/chapters/gazebo-simulation",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "chapters/isaac-sim-setup",
+              "path": "/Physical-AI-And-Humanoid-Robotics/chapters/isaac-sim-setup",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "chapters/perception-vision",
+              "path": "/Physical-AI-And-Humanoid-Robotics/chapters/perception-vision",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "chapters/physical-ai-foundations",
+              "path": "/Physical-AI-And-Humanoid-Robotics/chapters/physical-ai-foundations",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "chapters/ros2-essentials",
+              "path": "/Physical-AI-And-Humanoid-Robotics/chapters/ros2-essentials",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "chapters/testing-validation",
+              "path": "/Physical-AI-And-Humanoid-Robotics/chapters/testing-validation",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "chapters/unity-digital-twins",
+              "path": "/Physical-AI-And-Humanoid-Robotics/chapters/unity-digital-twins",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "chapters/vla-systems-intro",
+              "path": "/Physical-AI-And-Humanoid-Robotics/chapters/vla-systems-intro",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "chapters/voice-robotics",
+              "path": "/Physical-AI-And-Humanoid-Robotics/chapters/voice-robotics",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "code-examples/README",
+              "path": "/Physical-AI-And-Humanoid-Robotics/code-examples/"
+            },
+            {
+              "id": "diagrams/README",
+              "path": "/Physical-AI-And-Humanoid-Robotics/diagrams/"
+            },
+            {
+              "id": "glossary",
+              "path": "/Physical-AI-And-Humanoid-Robotics/glossary",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "index",
+              "path": "/Physical-AI-And-Humanoid-Robotics/book-overview"
+            },
+            {
+              "id": "intro",
+              "path": "/Physical-AI-And-Humanoid-Robotics/intro",
+              "sidebar": "tutorialSidebar"
+            }
+          ],
+          "draftIds": [],
+          "sidebars": {
+            "tutorialSidebar": {
+              "link": {
+                "path": "/Physical-AI-And-Humanoid-Robotics/intro",
+                "label": "Introduction"
+              }
+            }
+          }
+        }
+      ],
+      "breadcrumbs": true
+    }
+  }
+}
