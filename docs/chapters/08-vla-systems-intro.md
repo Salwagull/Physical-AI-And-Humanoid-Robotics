@@ -147,7 +147,7 @@ import cv2
 class SimpleVLANode:
     def __init__(self):
         self.node = rclpy.create_node('simple_vla')
-        self.cmd_pub = self.node.create_publisher(Twist, '/cmd_vel', queue_size=10)
+        self.cmd_pub = self.node.create_publisher(Twist, '/cmd_vel', 10)
         self.camera = cv2.VideoCapture(0)
         self.client = anthropic.Anthropic()
 

@@ -250,7 +250,7 @@ def main():
     node = rclpy.create_node('joint_monitor')
 
     sub = node.create_subscription(
-        JointState, '/joint_states', joint_state_callback, queue_size=10
+        JointState, '/joint_states', joint_state_callback, 10
     )
 
     rclpy.spin(node)

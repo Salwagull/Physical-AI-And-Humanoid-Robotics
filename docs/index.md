@@ -1,105 +1,33 @@
 ---
-title: Physical AI & Humanoid Robotics
-description: From ROS 2 to Vision-Language-Action Systems
+slug: /book-overview
+title: Book Overview
+description: Complete table of contents and chapter guide
+sidebar_position: 100
 ---
 
-<div class="hero-section">
-  <div class="hero-content">
-    <h1 class="hero-title">Physical AI & Humanoid Robotics</h1>
-    <p class="hero-subtitle">Master robot development from ROS 2 to Vision-Language-Action systems</p>
-    <div class="hero-buttons">
-      <a href="/docs/intro" class="button button-primary">Get Started →</a>
-      <a href="/docs/chapters/01-physical-ai-foundations" class="button button-secondary">Start Learning</a>
-    </div>
-  </div>
-</div>
+# Book Overview
 
-## What You'll Learn
+Complete guide to all chapters and learning resources in the Physical AI & Humanoid Robotics book.
 
-<div class="cards-grid">
-  <div class="card">
-    <div class="card-icon">🤖</div>
-    <div class="card-title">Physical AI Foundations</div>
-    <div class="card-description">Understand embodied AI, sensor-motor systems, and the principles that power humanoid robots in the real world.</div>
-  </div>
+## Chapter List
 
-  <div class="card">
-    <div class="card-icon">🔧</div>
-    <div class="card-title">ROS 2 & Communication</div>
-    <div class="card-description">Master the Robot Operating System with Python (rclpy), publish-subscribe patterns, and distributed robotics architecture.</div>
-  </div>
+| Chapter | Title | Description |
+|---------|-------|-------------|
+| 1 | [Physical AI Foundations](/chapters/physical-ai-foundations) | What is Physical AI and why it matters |
+| 2 | [ROS 2 Essentials](/chapters/ros2-essentials) | Nodes, topics, services, and your first code |
+| 3 | [Gazebo Simulation](/chapters/gazebo-simulation) | Physics simulation and robot spawning |
+| 4 | [Unity Digital Twins](/chapters/unity-digital-twins) | Visual realism with game engines |
+| 5 | [Isaac Sim Setup](/chapters/isaac-sim-setup) | NVIDIA's AI-native simulation platform |
+| 6 | [Perception & Vision](/chapters/perception-vision) | Cameras, object detection, scene understanding |
+| 7 | [Control & Planning](/chapters/control-planning) | Motion planning and robot control |
+| 8 | [VLA Systems Intro](/chapters/vla-systems-intro) | Vision-Language-Action architecture |
+| 9 | [Voice-Driven Robotics](/chapters/voice-robotics) | Speech-to-text, LLM planning, text-to-speech |
+| 10 | [Capstone Architecture](/chapters/capstone-architecture) | System design for the final project |
+| 11 | [Capstone Implementation](/chapters/capstone-implementation) | Building the complete system |
+| 12 | [Testing & Validation](/chapters/testing-validation) | Ensuring your robot works correctly |
+| 13 | [Deployment & Next Steps](/chapters/deployment-next-steps) | Sharing your work and continuing your journey |
 
-  <div class="card">
-    <div class="card-icon">🌍</div>
-    <div class="card-title">Simulation & Digital Twins</div>
-    <div class="card-description">Build realistic simulations with Gazebo, create digital twins in Unity, and validate behavior before hardware deployment.</div>
-  </div>
+## Reference Materials
 
-  <div class="card">
-    <div class="card-icon">🧠</div>
-    <div class="card-title">AI-Native Robotics</div>
-    <div class="card-description">Implement perception, planning, and control using Isaac Sim, deep learning, and neural networks for autonomous behavior.</div>
-  </div>
-
-  <div class="card">
-    <div class="card-icon">🗣️</div>
-    <div class="card-title">Vision-Language-Action</div>
-    <div class="card-description">Integrate large language models with robot perception and control for natural language understanding and voice-driven robotics.</div>
-  </div>
-</div>
-
-## Book Structure
-
-<div class="cards-grid">
-  <div class="card">
-    <div class="card-icon">📚</div>
-    <div class="card-title">Module 1: Foundations & Communication</div>
-    <div class="card-description">Chapters 1-3: Physical AI concepts, ROS 2 essentials, and Gazebo simulation fundamentals.</div>
-  </div>
-
-  <div class="card">
-    <div class="card-icon">🌐</div>
-    <div class="card-title">Module 2: Digital Twins</div>
-    <div class="card-description">Chapter 4: Create digital twins in Unity and bridge the gap between simulation and reality.</div>
-  </div>
-
-  <div class="card">
-    <div class="card-icon">⚡</div>
-    <div class="card-title">Module 3: AI-Native Robotics</div>
-    <div class="card-description">Chapters 5-7: Isaac Sim, computer vision, and motion planning for intelligent robots.</div>
-  </div>
-
-  <div class="card">
-    <div class="card-icon">🎯</div>
-    <div class="card-title">Module 4: Vision-Language-Action</div>
-    <div class="card-description">Chapters 8-9: Voice robotics, LLM planning, and multimodal AI systems.</div>
-  </div>
-
-  <div class="card">
-    <div class="card-icon">🏗️</div>
-    <div class="card-title">Module 5: Capstone Project</div>
-    <div class="card-description">Chapters 10-13: Build an end-to-end Voice-Driven Mobile Manipulator system.</div>
-  </div>
-</div>
-
-## Perfect For
-
-- **Students & Educators**: Comprehensive curriculum for hands-on robotics learning
-- **Roboticists**: Bridge theory and practice with working code examples
-- **AI Engineers**: Apply LLMs and vision models to physical systems
-- **Hobbyists**: Start from zero and build production-ready robots
-
-## Accessibility & Quality
-
-✅ **Beginner-Friendly**: Flesch grade 8-10 readability for all learners
-✅ **Runnable Code**: All 50+ examples tested on Ubuntu 22.04 & Windows WSL2
-✅ **Original Content**: Plagiarism-verified, community-built knowledge
-✅ **Modular Design**: Learn any chapter independently with clear dependencies
-✅ **Visual Learning**: Diagrams, architecture sketches, and system flows included
-
----
-
-<div class="cta-section">
-  <a href="/docs/intro" class="button button-primary cta-button">📖 Read the Introduction</a>
-  <a href="/docs/glossary" class="button button-secondary cta-button">📚 View the Glossary</a>
-</div>
+- **[Glossary](/glossary)** - 50+ key terms defined
+- **[Introduction](/intro)** - Detailed book overview and learning objectives

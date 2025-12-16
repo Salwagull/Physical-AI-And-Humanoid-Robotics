@@ -127,8 +127,8 @@ def main(args=None):
     rclpy.init(args=args)
     node = rclpy.create_node('velocity_publisher')
 
-    # Create publisher: topic name, message type, queue size
-    pub = node.create_publisher(Twist, '/cmd_vel', queue_size=10)
+    # Create publisher: message type, topic name, queue size
+    pub = node.create_publisher(Twist, '/cmd_vel', 10)
 
     # Create a velocity message
     msg = Twist()
@@ -166,8 +166,8 @@ def main(args=None):
     rclpy.init(args=args)
     node = rclpy.create_node('velocity_subscriber')
 
-    # Create subscriber: topic name, message type, callback
-    sub = node.create_subscription(Twist, '/cmd_vel', velocity_callback, queue_size=10)
+    # Create subscriber: message type, topic name, callback, queue size
+    sub = node.create_subscription(Twist, '/cmd_vel', velocity_callback, 10)
 
     print("Listening to /cmd_vel...")
     rclpy.spin(node)  # Keep node running, process messages

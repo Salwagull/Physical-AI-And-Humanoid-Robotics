@@ -161,7 +161,7 @@ import json
 class VoiceControlNode:
     def __init__(self):
         self.node = rclpy.create_node('voice_control')
-        self.cmd_pub = self.node.create_publisher(Twist, '/cmd_vel', queue_size=10)
+        self.cmd_pub = self.node.create_publisher(Twist, '/cmd_vel', 10)
         self.model = whisper.load_model("tiny")  # Fast model for real-time
 
     def run(self):

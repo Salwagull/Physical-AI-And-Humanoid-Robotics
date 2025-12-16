@@ -1,0 +1,768 @@
+/* ============================================
+   Hero Section with Animated Robot Background
+   ============================================ */
+
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: linear-gradient(135deg, #050810 0%, #0a0f1a 30%, #0f172a 60%, #1a1f35 100%);
+}
+
+/* Background Elements */
+.heroBackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+}
+
+/* Grid lines background */
+.gridLines {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image:
+    linear-gradient(rgba(6, 182, 212, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(6, 182, 212, 0.05) 1px, transparent 1px);
+  background-size: 40px 40px;
+  animation: gridMove 30s linear infinite;
+  mask-image: radial-gradient(ellipse at center, black 30%, transparent 80%);
+}
+
+@keyframes gridMove {
+  0% { transform: translateY(0) translateX(0); }
+  100% { transform: translateY(40px) translateX(40px); }
+}
+
+/* Floating particles */
+.floatingParticles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.particle {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background: #06b6d4;
+  border-radius: 50%;
+  opacity: 0.7;
+  animation: particleFloat 20s infinite ease-in-out;
+  box-shadow: 0 0 15px #06b6d4, 0 0 30px #06b6d4, 0 0 45px #06b6d4;
+}
+
+.particle:nth-child(1) { top: 5%; left: 5%; animation-delay: 0s; }
+.particle:nth-child(2) { top: 15%; left: 85%; animation-delay: 1.5s; background: #10b981; box-shadow: 0 0 15px #10b981, 0 0 30px #10b981; }
+.particle:nth-child(3) { top: 55%; left: 10%; animation-delay: 3s; }
+.particle:nth-child(4) { top: 75%; left: 75%; animation-delay: 4.5s; background: #a855f7; box-shadow: 0 0 15px #a855f7, 0 0 30px #a855f7; }
+.particle:nth-child(5) { top: 35%; left: 92%; animation-delay: 6s; background: #10b981; box-shadow: 0 0 15px #10b981, 0 0 30px #10b981; }
+.particle:nth-child(6) { top: 65%; left: 25%; animation-delay: 7.5s; }
+.particle:nth-child(7) { top: 25%; left: 45%; animation-delay: 9s; background: #a855f7; box-shadow: 0 0 15px #a855f7, 0 0 30px #a855f7; }
+.particle:nth-child(8) { top: 85%; left: 88%; animation-delay: 10.5s; background: #10b981; box-shadow: 0 0 15px #10b981, 0 0 30px #10b981; }
+.particle:nth-child(9) { top: 45%; left: 3%; animation-delay: 12s; background: #a855f7; box-shadow: 0 0 15px #a855f7, 0 0 30px #a855f7; }
+.particle:nth-child(10) { top: 10%; left: 60%; animation-delay: 13.5s; }
+.particle:nth-child(11) { top: 90%; left: 40%; animation-delay: 15s; background: #10b981; box-shadow: 0 0 15px #10b981, 0 0 30px #10b981; }
+.particle:nth-child(12) { top: 50%; left: 70%; animation-delay: 16.5s; background: #a855f7; box-shadow: 0 0 15px #a855f7, 0 0 30px #a855f7; }
+
+@keyframes particleFloat {
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
+    opacity: 0.7;
+  }
+  25% {
+    transform: translate(30px, -40px) scale(1.3);
+    opacity: 0.9;
+  }
+  50% {
+    transform: translate(-20px, -70px) scale(0.7);
+    opacity: 0.4;
+  }
+  75% {
+    transform: translate(40px, -30px) scale(1.2);
+    opacity: 0.8;
+  }
+}
+
+/* ============================================
+   Humanoid Robot Animation
+   ============================================ */
+
+.humanoidRobot {
+  position: absolute;
+  right: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 350px;
+  height: 450px;
+  opacity: 0.6;
+  animation: robotFloat 6s ease-in-out infinite;
+}
+
+@keyframes robotFloat {
+  0%, 100% { transform: translateY(-50%) translateX(0); }
+  50% { transform: translateY(-52%) translateX(5px); }
+}
+
+@media (max-width: 1200px) {
+  .humanoidRobot {
+    opacity: 0.3;
+    right: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .humanoidRobot {
+    display: none;
+  }
+}
+
+.humanoidSvg {
+  width: 100%;
+  height: 100%;
+}
+
+/* Robot head animation */
+.robotHead {
+  animation: headBob 4s ease-in-out infinite;
+  transform-origin: 150px 105px;
+}
+
+@keyframes headBob {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(2deg); }
+  75% { transform: rotate(-2deg); }
+}
+
+/* Robot eyes */
+.robotEye {
+  animation: eyePulse 3s ease-in-out infinite;
+}
+
+@keyframes eyePulse {
+  0%, 100% { opacity: 0.8; }
+  50% { opacity: 1; }
+}
+
+.robotPupil {
+  animation: pupilMove 5s ease-in-out infinite;
+}
+
+@keyframes pupilMove {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(2px); }
+  75% { transform: translateX(-2px); }
+}
+
+/* Antenna */
+.antennaPulse {
+  animation: antennaBlink 2s ease-in-out infinite;
+}
+
+@keyframes antennaBlink {
+  0%, 100% { opacity: 0.5; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.3); }
+}
+
+/* Core reactor */
+.coreOuter {
+  animation: coreRotate 10s linear infinite;
+  transform-origin: 150px 180px;
+}
+
+@keyframes coreRotate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.coreInner {
+  animation: corePulse 2s ease-in-out infinite;
+}
+
+.corePulse {
+  animation: coreBeat 1s ease-in-out infinite;
+}
+
+@keyframes corePulse {
+  0%, 100% { opacity: 0.5; transform: scale(1); }
+  50% { opacity: 0.8; transform: scale(1.1); }
+}
+
+@keyframes coreBeat {
+  0%, 100% { opacity: 0.8; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.2); }
+}
+
+/* Arms */
+.leftArm {
+  animation: leftArmSwing 4s ease-in-out infinite;
+  transform-origin: 95px 135px;
+}
+
+.rightArm {
+  animation: rightArmSwing 4s ease-in-out infinite 0.5s;
+  transform-origin: 205px 135px;
+}
+
+@keyframes leftArmSwing {
+  0%, 100% { transform: rotate(0deg); }
+  50% { transform: rotate(5deg); }
+}
+
+@keyframes rightArmSwing {
+  0%, 100% { transform: rotate(0deg); }
+  50% { transform: rotate(-5deg); }
+}
+
+/* Legs */
+.leftLeg {
+  animation: leftLegMove 3s ease-in-out infinite;
+  transform-origin: 125px 255px;
+}
+
+.rightLeg {
+  animation: rightLegMove 3s ease-in-out infinite 0.3s;
+  transform-origin: 175px 255px;
+}
+
+@keyframes leftLegMove {
+  0%, 100% { transform: rotate(0deg); }
+  50% { transform: rotate(2deg); }
+}
+
+@keyframes rightLegMove {
+  0%, 100% { transform: rotate(0deg); }
+  50% { transform: rotate(-2deg); }
+}
+
+/* Joints */
+.jointPulse {
+  animation: jointGlow 2s ease-in-out infinite;
+}
+
+@keyframes jointGlow {
+  0%, 100% { opacity: 0.5; }
+  50% { opacity: 1; }
+}
+
+/* Fingers */
+.robotFingers {
+  animation: fingersMove 3s ease-in-out infinite;
+}
+
+@keyframes fingersMove {
+  0%, 100% { opacity: 0.7; }
+  50% { opacity: 1; }
+}
+
+/* Energy waves */
+.energyWave1 {
+  animation: waveExpand 3s ease-out infinite;
+}
+
+.energyWave2 {
+  animation: waveExpand 3s ease-out infinite 1s;
+}
+
+.energyWave3 {
+  animation: waveExpand 3s ease-out infinite 2s;
+}
+
+@keyframes waveExpand {
+  0% { transform: scale(0.8); opacity: 0.5; }
+  100% { transform: scale(1.5); opacity: 0; }
+}
+
+/* Robot torso breathing */
+.robotTorso {
+  animation: torsoBreath 4s ease-in-out infinite;
+  transform-origin: 150px 190px;
+}
+
+@keyframes torsoBreath {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.02); }
+}
+
+/* ============================================
+   Scanning Lines
+   ============================================ */
+
+.scanLine {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #06b6d4, transparent);
+  animation: scanDown 4s linear infinite;
+  opacity: 0.5;
+}
+
+.scanLine2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #10b981, transparent);
+  animation: scanUp 5s linear infinite 2s;
+  opacity: 0.4;
+}
+
+@keyframes scanDown {
+  0% { top: 0; opacity: 0; }
+  10% { opacity: 0.5; }
+  90% { opacity: 0.5; }
+  100% { top: 100%; opacity: 0; }
+}
+
+@keyframes scanUp {
+  0% { bottom: 0; opacity: 0; }
+  10% { opacity: 0.4; }
+  90% { opacity: 0.4; }
+  100% { bottom: 100%; opacity: 0; }
+}
+
+/* ============================================
+   Circuit Patterns
+   ============================================ */
+
+.circuitLeft {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 200px;
+  height: 100%;
+  opacity: 0.4;
+}
+
+.circuitRight {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 200px;
+  height: 100%;
+  opacity: 0.4;
+}
+
+@media (max-width: 996px) {
+  .circuitLeft, .circuitRight {
+    display: none;
+  }
+}
+
+.circuitSvg {
+  width: 100%;
+  height: 100%;
+}
+
+.circuit1, .circuit2, .circuit3, .circuit4 {
+  stroke-dasharray: 400;
+  stroke-dashoffset: 400;
+  animation: drawCircuit 5s ease-in-out infinite;
+}
+
+.circuit2 { animation-delay: 1s; }
+.circuit3 { animation-delay: 2s; }
+.circuit4 { animation-delay: 3s; }
+
+@keyframes drawCircuit {
+  0%, 100% {
+    stroke-dashoffset: 400;
+    opacity: 0.2;
+  }
+  50% {
+    stroke-dashoffset: 0;
+    opacity: 0.8;
+  }
+}
+
+.circuitNode {
+  animation: nodeGlow 2s ease-in-out infinite;
+}
+
+@keyframes nodeGlow {
+  0%, 100% { opacity: 0.3; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.5); }
+}
+
+/* ============================================
+   Data Streams
+   ============================================ */
+
+.dataStream1, .dataStream2, .dataStream3 {
+  position: absolute;
+  width: 2px;
+  height: 100px;
+  background: linear-gradient(180deg, transparent, #06b6d4, transparent);
+  animation: dataFlow 3s linear infinite;
+}
+
+.dataStream1 {
+  left: 15%;
+  animation-delay: 0s;
+}
+
+.dataStream2 {
+  left: 85%;
+  background: linear-gradient(180deg, transparent, #10b981, transparent);
+  animation-delay: 1s;
+}
+
+.dataStream3 {
+  left: 50%;
+  background: linear-gradient(180deg, transparent, #a855f7, transparent);
+  animation-delay: 2s;
+  opacity: 0.5;
+}
+
+@keyframes dataFlow {
+  0% { top: -100px; opacity: 0; }
+  10% { opacity: 0.6; }
+  90% { opacity: 0.6; }
+  100% { top: 100%; opacity: 0; }
+}
+
+/* ============================================
+   Hero Content
+   ============================================ */
+
+.heroContent {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding: 2rem;
+  max-width: 900px;
+  animation: fadeInUp 1s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ============================================
+   Animated Title
+   ============================================ */
+
+.heroTitle {
+  font-size: 4.5rem;
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.02em;
+}
+
+@media (max-width: 768px) {
+  .heroTitle {
+    font-size: 2.5rem;
+  }
+}
+
+.titleWrapper {
+  display: inline-block;
+}
+
+.titleLetter {
+  display: inline-block;
+  background: linear-gradient(135deg, #06b6d4 0%, #10b981 50%, #a855f7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  background-size: 200% 200%;
+  animation:
+    letterAppear 0.5s ease-out calc(var(--i) * 0.08s) backwards,
+    gradientWave 3s ease-in-out infinite calc(var(--i) * 0.1s),
+    letterFloat 4s ease-in-out infinite calc(var(--i) * 0.2s);
+}
+
+.titleSpace {
+  display: inline-block;
+  width: 0.3em;
+}
+
+@keyframes letterAppear {
+  from {
+    opacity: 0;
+    transform: translateY(-30px) rotateX(-90deg);
+    filter: blur(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) rotateX(0deg);
+    filter: blur(0);
+  }
+}
+
+@keyframes gradientWave {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+@keyframes letterFloat {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+
+.titleSecondary {
+  color: #e2e8f0;
+  font-size: 0.65em;
+  animation: fadeInUp 0.8s ease-out 1s backwards;
+  display: inline-block;
+}
+
+.ampersand {
+  display: inline-block;
+  background: linear-gradient(135deg, #a855f7 0%, #06b6d4 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: ampersandPulse 2s ease-in-out infinite;
+  margin-right: 0.2em;
+}
+
+@keyframes ampersandPulse {
+  0%, 100% { transform: scale(1) rotate(0deg); }
+  50% { transform: scale(1.1) rotate(5deg); }
+}
+
+/* ============================================
+   Subtitle and Tagline
+   ============================================ */
+
+.heroSubtitle {
+  font-size: 1.5rem;
+  color: #94a3b8;
+  margin-bottom: 0.5rem;
+  animation: fadeInUp 1s ease-out 1.2s backwards;
+}
+
+@media (max-width: 768px) {
+  .heroSubtitle {
+    font-size: 1.1rem;
+  }
+}
+
+.highlight {
+  color: #06b6d4;
+  font-weight: 600;
+  position: relative;
+  display: inline-block;
+  animation: highlightPop 0.5s ease-out backwards;
+}
+
+.highlight:nth-of-type(1) { animation-delay: 1.5s; }
+.highlight:nth-of-type(2) { animation-delay: 1.7s; }
+.highlight:nth-of-type(3) { animation-delay: 1.9s; }
+.highlight:nth-of-type(4) { animation-delay: 2.1s; }
+
+@keyframes highlightPop {
+  0% { transform: scale(0); opacity: 0; }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.highlight::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, #06b6d4, #10b981);
+  transform: scaleX(0);
+  animation: underlineGrow 0.5s ease-out forwards;
+  animation-delay: inherit;
+}
+
+@keyframes underlineGrow {
+  to { transform: scaleX(1); }
+}
+
+.heroTagline {
+  font-size: 1.1rem;
+  color: #64748b;
+  margin-bottom: 2rem;
+  animation: fadeInUp 1s ease-out 1.4s backwards;
+}
+
+/* ============================================
+   Buttons
+   ============================================ */
+
+.heroButtons {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+  animation: fadeInUp 1s ease-out 1.6s backwards;
+}
+
+.primaryButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem 2.5rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+  border-radius: 0.75rem;
+  background: linear-gradient(135deg, #06b6d4 0%, #10b981 100%);
+  color: #0f172a;
+  text-decoration: none;
+  box-shadow: 0 10px 40px rgba(6, 182, 212, 0.3);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.buttonGlow {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  animation: buttonShine 3s ease-in-out infinite;
+}
+
+@keyframes buttonShine {
+  0% { left: -100%; }
+  50%, 100% { left: 100%; }
+}
+
+.primaryButton:hover {
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 20px 60px rgba(6, 182, 212, 0.4);
+  color: #0f172a;
+}
+
+.buttonArrow {
+  transition: transform 0.3s ease;
+}
+
+.primaryButton:hover .buttonArrow {
+  transform: translateX(5px);
+}
+
+.secondaryButton {
+  display: inline-flex;
+  align-items: center;
+  padding: 1rem 2.5rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+  border-radius: 0.75rem;
+  background: transparent;
+  border: 2px solid #06b6d4;
+  color: #06b6d4;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.secondaryButton::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: rgba(6, 182, 212, 0.1);
+  transition: width 0.3s ease;
+}
+
+.secondaryButton:hover {
+  transform: translateY(-4px);
+  color: #06b6d4;
+  box-shadow: 0 10px 30px rgba(6, 182, 212, 0.2);
+}
+
+.secondaryButton:hover::before {
+  width: 100%;
+}
+
+/* ============================================
+   Stats Section
+   ============================================ */
+
+.heroStats {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  animation: fadeInUp 1s ease-out 1.8s backwards;
+}
+
+@media (max-width: 576px) {
+  .heroStats {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .statDivider {
+    display: none;
+  }
+}
+
+.stat {
+  text-align: center;
+}
+
+.statNumber {
+  display: block;
+  font-size: 2.5rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, #06b6d4 0%, #10b981 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: countUp 2s ease-out 2s backwards;
+}
+
+@keyframes countUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.statLabel {
+  font-size: 0.9rem;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.statDivider {
+  width: 1px;
+  height: 40px;
+  background: linear-gradient(180deg, transparent, #06b6d4, transparent);
+  animation: dividerPulse 2s ease-in-out infinite;
+}
+
+@keyframes dividerPulse {
+  0%, 100% { opacity: 0.3; }
+  50% { opacity: 0.8; }
+}

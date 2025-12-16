@@ -114,7 +114,7 @@ world = World()
 rclpy.init()
 node = rclpy.create_node('isaac_robot_controller')
 
-node.create_subscription(Twist, '/cmd_vel', cmd_vel_callback, queue_size=10)
+node.create_subscription(Twist, '/cmd_vel', cmd_vel_callback, 10)
 
 while rclpy.ok():
     world.step()
