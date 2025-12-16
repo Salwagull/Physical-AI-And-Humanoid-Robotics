@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from '@docusaurus/Link';
 import styles from './styles.module.css';
 
 const FeatureList = [
@@ -42,12 +43,12 @@ const FeatureList = [
 
 function Feature({icon, title, description, link, index}) {
   return (
-    <a href={link} className={styles.featureCard} style={{'--delay': `${index * 0.1}s`}}>
+    <Link to={link} className={styles.featureCard} style={{'--delay': `${index * 0.1}s`}}>
       <div className={styles.featureIcon}>{icon}</div>
       <h3 className={styles.featureTitle}>{title}</h3>
       <p className={styles.featureDescription}>{description}</p>
       <span className={styles.featureArrow}>→</span>
-    </a>
+    </Link>
   );
 }
 
