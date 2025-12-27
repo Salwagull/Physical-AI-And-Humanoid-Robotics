@@ -6,6 +6,9 @@
 .container {
   max-width: 1200px;
   margin: 0 auto;
+  width: 100%;
+  padding: 0 1rem;
+  box-sizing: border-box;
 }
 
 .sectionTitle {
@@ -33,15 +36,133 @@
   gap: 2rem;
 }
 
-@media (max-width: 996px) {
+/* Extra Large Screens (1400px+) */
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+
   .featureGrid {
-    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+  }
+
+  .sectionTitle {
+    font-size: 3rem;
   }
 }
 
-@media (max-width: 576px) {
+/* Large Screens (1200px - 1399px) */
+@media (max-width: 1399px) {
+  .featureGrid {
+    gap: 1.75rem;
+  }
+}
+
+/* Medium Screens (992px - 1199px) */
+@media (max-width: 1199px) {
+  .features {
+    padding: 3.5rem 1.5rem 5rem;
+  }
+
+  .sectionTitle {
+    font-size: 2.25rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .featureGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+/* Tablets (768px - 991px) */
+@media (max-width: 991px) {
+  .features {
+    padding: 3rem 1.25rem 4rem;
+  }
+
+  .sectionTitle {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .sectionTitle::after {
+    width: 80px;
+    height: 3px;
+  }
+
+  .featureGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+  }
+}
+
+/* Large Mobile / Small Tablets (576px - 767px) */
+@media (max-width: 767px) {
+  .features {
+    padding: 2.5rem 1rem 3.5rem;
+  }
+
+  .container {
+    padding: 0 0.5rem;
+  }
+
+  .sectionTitle {
+    font-size: 1.75rem;
+    margin-bottom: 1.75rem;
+  }
+
+  .sectionTitle::after {
+    width: 70px;
+    margin-top: 0.75rem;
+  }
+
   .featureGrid {
     grid-template-columns: 1fr;
+    gap: 1rem;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+}
+
+/* Mobile (480px - 575px) */
+@media (max-width: 575px) {
+  .features {
+    padding: 2rem 0.75rem 3rem;
+  }
+
+  .sectionTitle {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .sectionTitle::after {
+    width: 60px;
+  }
+
+  .featureGrid {
+    gap: 0.875rem;
+    max-width: 100%;
+  }
+}
+
+/* Extra Small Mobile (below 380px) */
+@media (max-width: 379px) {
+  .features {
+    padding: 1.5rem 0.5rem 2.5rem;
+  }
+
+  .sectionTitle {
+    font-size: 1.35rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .sectionTitle::after {
+    width: 50px;
+  }
+
+  .featureGrid {
+    gap: 0.75rem;
   }
 }
 
@@ -181,4 +302,220 @@
 .featureCard:hover .featureArrow {
   opacity: 1;
   transform: translateX(0);
+}
+
+/* ============================================
+   Feature Card Responsive Styles
+   ============================================ */
+
+/* Medium Screens (992px - 1199px) */
+@media (max-width: 1199px) {
+  .featureCard {
+    padding: 1.75rem;
+  }
+
+  .featureIcon {
+    font-size: 2.5rem;
+  }
+
+  .featureTitle {
+    font-size: 1.3rem;
+  }
+
+  .featureDescription {
+    font-size: 0.95rem;
+  }
+}
+
+/* Tablets (768px - 991px) */
+@media (max-width: 991px) {
+  .featureCard {
+    padding: 1.5rem;
+  }
+
+  .featureIcon {
+    font-size: 2.25rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .featureTitle {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .featureDescription {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+
+  .featureArrow {
+    bottom: 1.25rem;
+    right: 1.25rem;
+    font-size: 1.25rem;
+  }
+}
+
+/* Large Mobile / Small Tablets (576px - 767px) */
+@media (max-width: 767px) {
+  .featureCard {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .featureIcon {
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .featureTitle {
+    font-size: 1.15rem;
+  }
+
+  .featureDescription {
+    font-size: 0.9rem;
+  }
+
+  .featureArrow {
+    bottom: 1rem;
+    right: 1rem;
+    font-size: 1.25rem;
+    /* Show arrow on mobile since hover doesn't work well */
+    opacity: 0.5;
+    transform: translateX(0);
+  }
+
+  .featureCard:hover .featureArrow {
+    opacity: 1;
+  }
+
+  /* Reduce animation intensity on mobile */
+  .featureIcon {
+    animation: none;
+  }
+}
+
+/* Mobile (480px - 575px) */
+@media (max-width: 575px) {
+  .featureCard {
+    padding: 1.25rem;
+  }
+
+  .featureIcon {
+    font-size: 1.75rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .featureTitle {
+    font-size: 1.1rem;
+    margin-bottom: 0.4rem;
+  }
+
+  .featureDescription {
+    font-size: 0.85rem;
+    line-height: 1.5;
+  }
+
+  .featureArrow {
+    bottom: 0.875rem;
+    right: 0.875rem;
+    font-size: 1.1rem;
+  }
+}
+
+/* Extra Small Mobile (below 380px) */
+@media (max-width: 379px) {
+  .featureCard {
+    padding: 1rem;
+  }
+
+  .featureIcon {
+    font-size: 1.5rem;
+  }
+
+  .featureTitle {
+    font-size: 1rem;
+  }
+
+  .featureDescription {
+    font-size: 0.8rem;
+  }
+
+  .featureArrow {
+    bottom: 0.75rem;
+    right: 0.75rem;
+    font-size: 1rem;
+  }
+}
+
+/* Landscape mode on mobile */
+@media (max-height: 500px) and (orientation: landscape) {
+  .features {
+    padding: 2rem 1rem 3rem;
+  }
+
+  .featureGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .featureCard {
+    padding: 1rem;
+  }
+
+  .featureIcon {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .featureTitle {
+    font-size: 1rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .featureDescription {
+    font-size: 0.8rem;
+    line-height: 1.4;
+  }
+}
+
+/* Touch device optimizations */
+@media (hover: none) and (pointer: coarse) {
+  .featureCard:hover {
+    transform: none;
+  }
+
+  .featureCard:active {
+    transform: scale(0.98);
+    border-color: #06b6d4;
+  }
+
+  .featureArrow {
+    opacity: 0.6;
+    transform: translateX(0);
+  }
+
+  .featureIcon {
+    animation: none;
+  }
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  .featureCard,
+  .featureIcon,
+  .featureArrow {
+    animation: none !important;
+    transition: none !important;
+  }
+
+  .featureCard:hover {
+    transform: none;
+  }
+
+  .featureCard::before,
+  .featureCard::after {
+    transition: none !important;
+  }
 }

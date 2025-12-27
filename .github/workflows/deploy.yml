@@ -35,6 +35,9 @@ jobs:
         run: npm ci
 
       - name: Build Docusaurus site
+        env:
+          # Backend API URL - update this after deploying backend to Render/Railway
+          API_URL: https://physical-ai-backend.onrender.com
         run: npm run build
 
       - name: Upload artifact

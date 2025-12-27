@@ -1,0 +1,41 @@
+# Render Blueprint specification
+# Deploy: connect repo and Render auto-detects this file
+# https://render.com/docs/blueprint-spec
+
+services:
+  - type: web
+    name: physical-ai-backend
+    runtime: python
+    region: oregon
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn agent:app --host 0.0.0.0 --port $PORT
+    envVars:
+      # JWT Configuration (required)
+      - key: JWT_SECRET_KEY
+        generateValue: true
+
+      # Frontend URL for CORS and OAuth redirects
+      - key: FRONTEND_URL
+        value: https://salwagull.github.io/Physical-AI-And-Humanoid-Robotics
+
+      # Cohere API for embeddings (add in Render dashboard)
+      - key: COHERE_API_KEY
+        sync: false
+
+      # Qdrant Cloud for vector storage (add in Render dashboard)
+      - key: QDRANT_URL
+        sync: false
+      - key: QDRANT_API_KEY
+        sync: false
+
+      # OpenRouter for LLM generation (add in Render dashboard)
+      - key: OPENROUTER_API_KEY
+        sync: false
+
+      # Google OAuth (optional - leave empty to disable)
+      - key: GOOGLE_CLIENT_ID
+        sync: false
+      - key: GOOGLE_CLIENT_SECRET
+        sync: false
+    healthCheckPath: /

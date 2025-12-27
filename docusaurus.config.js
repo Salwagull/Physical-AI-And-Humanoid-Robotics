@@ -12,6 +12,15 @@ const config = {
   tagline: 'From ROS 2 to Vision-Language-Action Systems',
   favicon: 'img/favicon.ico',
 
+  // Custom fields for frontend configuration
+  // IMPORTANT: Update apiUrl to your production backend URL after deployment
+  customFields: {
+    // Backend API URL - set to your Render/Railway deployed backend
+    // Example: 'https://physical-ai-backend.onrender.com'
+    // For local development, components fall back to http://127.0.0.1:8000
+    apiUrl: process.env.API_URL || 'https://physical-ai-backend.onrender.com',
+  },
+
   // Set the production url of your site here
   url: 'https://salwagull.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
